@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mkhulu's On Main Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0%;
+            padding: 0;
+            position: relative;
+        }
+        #video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        header {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            transition: border 0.3s ease;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            border-color: #fff;
+        }  
+        .social-icons {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .social-icons img {
+            width: 30px;
+        }
+        h1, h2, p, button {
+            color: #000000;
+            transition: color 0.3s ease;
+        }
+        h1, h2, p, button:hover {
+            color: #ffffff;
+        }
+
+        /* Additional styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .search-button {
+            background-color: #666;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search-button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .order-button-container {
+            text-align: center;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+        }
+        .order-button {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .order-button:hover {
+            background-color: #ffa500;
+            color: #fff;
+        }
+        .order-text {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-bg" autoplay muted loop>
+        <source src="Videos/0001111 SAMPLE BG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <!-- Header content -->
+        <h1>Welcome to Mkhulu's On Main</h1>
+    </header>
+    <nav>
+        <!-- Navigation buttons -->
+        <a href="#">Meals</a>
+        <a href="#">Deals</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Find A Store</a>
+        <button class="search-button">Search</button>
+    </nav>
+    <div class="content">
+        <!-- Content area content -->
+        <div class="social-icons">
+            <a href="#"><img src="Images/x logo.jpeg" alt="Twitter Logo"></a>
+            <a href="#"><img src="Images/Logo-WhatsApp.png" alt="WhatsApp Logo"></a>
+            <a href="#"><img src="Images/Facebook_logo_36x36.svg.png" alt="Facebook Logo"></a>
+            <a href="#"><img src="Images/Instagram logo.png" alt="Instagram Logo"></a>
+            <a href="#"><img src="Images/YouTube-Emblem.png" alt="YouTube Logo"></a>
+        </div>
+    </div>
+    <footer>
+        <!-- Footer content -->
+        <div class="order-button-container">
+            <button class="order-button">Order Now</button>
+            <p class="order-text">Discover our meals and order today</p>
+        </div>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Accessibility</a>
+    </footer>
+</body>
+</html>
